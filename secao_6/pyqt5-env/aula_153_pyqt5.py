@@ -11,6 +11,7 @@ class App(QMainWindow):
         self.btn.clicked.connect(self.acao)
         self.grid.addWidget(self.btn, 0, 0, 1, 1)
         self.setCentralWidget(self.cw)
+
     def acao(self):
         print('Teste')
 
