@@ -9,7 +9,7 @@ O getter pode ter sozinho no python, mas o setter não existe sem getter.
 class Pessoa:
 
     def __init__(self, nome):
-        self.nome = nome
+        self._nome = nome
     @property
     def nome(self):
         return self._nome
@@ -26,5 +26,5 @@ class Pessoa:
 
 
 p1 = Pessoa('Rafael')
-print(p1.nome) # Assim a funcao se comporta como atributo.
+print(p1._nome) # Assim a funcao se comporta como atributo.
 print(p1.sobrenome)
