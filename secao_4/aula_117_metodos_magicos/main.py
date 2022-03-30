@@ -15,6 +15,15 @@ class A:
         print(args)
         print(kwargs)
 
+    def fala_oi(self):
+        print('Oi')
+
+    def __setattr__(self, key, value):
+        print(key, value)
+
+
 
 a = A()
 a(1,2,3,4,5, nome='Rafael')
+a.fala_oi()
+a.nome = 'Rafael Moreira'
